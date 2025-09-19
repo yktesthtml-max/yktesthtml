@@ -5,16 +5,61 @@
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>YK Test</title>
 <style>
-  body { font-family: Arial,sans-serif; text-align:center; background:linear-gradient(to right,#4facfe,#00f2fe); margin:0; padding:0; }
-  .container { max-width:600px; margin:40px auto; background:#fff; padding:20px; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.2); }
-  button { margin:10px; padding:12px 20px; border:none; border-radius:8px; background:#4facfe; color:white; font-size:16px; cursor:pointer; }
+  body { 
+    font-family: Arial,sans-serif; 
+    text-align:center; 
+    background:linear-gradient(to right,#4facfe,#00f2fe); 
+    margin:0; 
+    padding:10px; 
+  }
+  .container { 
+    width:90%; 
+    max-width:500px; 
+    margin:20px auto; 
+    background:#fff; 
+    padding:15px; 
+    border-radius:12px; 
+    box-shadow:0 4px 10px rgba(0,0,0,0.2); 
+  }
+  button { 
+    width:100%; 
+    margin:8px 0; 
+    padding:14px; 
+    border:none; 
+    border-radius:8px; 
+    background:#4facfe; 
+    color:white; 
+    font-size:16px; 
+    cursor:pointer; 
+  }
   button:hover { background:#00c6ff; }
-  #question { margin:20px 0; font-size:18px; }
-  .option { display:block; margin:8px 0; padding:10px; border-radius:8px; border:1px solid #ddd; cursor:pointer; }
+  #question { 
+    margin:20px 0; 
+    font-size:17px; 
+    text-align:left; 
+  }
+  .option { 
+    display:block; 
+    width:100%; 
+    margin:6px 0; 
+    padding:12px; 
+    border-radius:8px; 
+    border:1px solid #ddd; 
+    cursor:pointer; 
+    text-align:left; 
+    font-size:15px; 
+  }
   .option:hover { background:#f0f0f0; }
-  #feedback { margin:15px 0; font-weight:bold; }
-  #backBtn { margin-top:20px; background:#ff5252; }
-  input { width:80%; padding:8px; margin:5px; border-radius:6px; border:1px solid #ccc; }
+  #feedback { margin:15px 0; font-weight:bold; font-size:16px; }
+  #backBtn { background:#ff5252; }
+  input { 
+    width:100%; 
+    padding:10px; 
+    margin:8px 0; 
+    border-radius:6px; 
+    border:1px solid #ccc; 
+    font-size:15px; 
+  }
   .score { margin-top:10px; font-weight:600; }
 </style>
 </head>
@@ -22,11 +67,10 @@
 
 <div class="container" id="loginScreen">
   <h2>YK TEST</h2>
-  <h2>Yapan:Yasin Emir Kahya</h2>
-  <h2>Destekliyen: Muhammet Yunus Mercimek</h2>
+  <h3>Yapan: Yasin Emir Kahya</h3>
+  <h3>Destekleyen: Muhammet Yunus Mercimek</h3>
   <input type="text" id="username" placeholder="Kullanıcı Adı - yktest" value="">
   <input type="password" id="password" placeholder="Şifre - yktest" value="">
-  <br><br>
   <button onclick="login()">Giriş</button>
 </div>
 
